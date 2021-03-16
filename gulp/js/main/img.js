@@ -1,0 +1,14 @@
+// console.log(moment().format());
+// $('.modal-img').hide();
+
+const img = document.querySelector(".modal-img");
+
+function animalImg() {
+  if (img.classList.contains("active")) {
+    img.classList.remove("active");
+  } else {
+    img.classList.add("active");
+  }
+}
+
+img.addEventListener("click", animalImg);
